@@ -1,26 +1,28 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-      <title>Sign Up | CloSets</title>
-    </head>
+<head>
+  <title>Welcome to CloSets!</title>
+</head>
 
-    <body class="body">
-      <div class="login-page">
-        <div class="form">
+<body class="body">
+<div class="login-page">
+  <div class="form">
+    
+    <h1>Welcome to CloSets!</h1> 
+    <h2>Fashion, functionality, and flexibility, right at your fingertips!</h2>
+    
+    <h3>Login</h3>
+    <form action="/login" method="POST">
+      <input type="text" name="Username" placeholder="Userame"><br><br>
+      <input type="password" id="password" name="password" placeholder="Password"><br><br>
+      <input type="submit" value="Submit">
+    </form>
+    <p>Don't have an account?</p>
 
-          <h1>Sign Up</h1>
-          <form action="/signup_submit" method="POST">
-            <input type="text" id="username" name="username" placeholder="Username"><br><br>
-            <input type="password" id="password" name="password" placeholder="Password"><br><br>
-            <input type="submit" value="Submit">
-            
-            <p>Already have an account?</p>
-
-          <form class="login-form">
-            <button type="button" onclick="window.location.href='login.html'">Login Here</button>
-          </form>
-        </div>
-      </div>
-    </body>
-    </script>
+    <form class="login-form">
+      <button type="button" onclick="window.location.href='signup.html'">Sign Up Here</button>
+    </form>
+  </div>
+</div>
+</body>
 </html>
