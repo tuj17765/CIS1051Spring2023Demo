@@ -1,8 +1,19 @@
 
-
 var closet = [];
-//now have to make it so that it takes a closet as an argument
-//so that these items are added specifically to that closet
+/*
+var closetList = []; //display closet list on right hand side, also each name should be a link
+
+function createCloset(){
+    var closet = [];
+
+    closetList.push(closet);
+}
+
+function editCloset(closetToEdit){ //now takes a closet as an argument so that these items are added specifically to that closet 
+    document.getElementById("addItemBtn").onclick = function(){createItem()};
+
+}*/
+
 function createItem(){
 
     let item = {
@@ -16,7 +27,7 @@ function createItem(){
     } //adds user input of type, color, style, season, fit to an item
 
     closet.push(item); //adds new item to closet
-    document.querySelector("#form").reset();   //clears form entry for next ones
+    document.querySelector("#addItemForm").reset();   //clears form entry for next ones
     document.querySelector("#showCloset").innerHTML = "";
 
     //displays the closet and the items inside - just for now, needs to be done w style sheet
@@ -42,7 +53,8 @@ function createOutfit(){
     var outfit = [] //array of items
 }
 
-document.getElementById("btn").onclick = function(){createItem()};
+document.getElementById("newClosetBtn").onclick = function(){createCloset()};
+document.getElementById("editClosetBtn").onclick = function(){editCloset()};
 
 
   
