@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang= "en">
+    <head>
+        <title>
+            Create Closet
+        </title>
+        <link rel="stylesheet" href="stylesheet.css">
+    </head>
+    <!--this should be a form, not a new webpage link-->
+    <body>
+        <form id="form" class="newForm">
+            <input type="file" id="image_input" accept="image/png, image/jpg, image/heif, image/heic, image/heif">
+            <div id="descriptors">
+                <input type="text" id="addType" placeholder="Type">
+                <input type="text" id="addColor" placeholder="Color">
+                <input type="text" id="addStyle" placeholder="Style">
+                <input type="text" id="addSeason" placeholder="Season">
+                <input type="text" id="addFit" placeholder="Fit">
+            </div>
+            <button type = "button" id="btn">Add Item</button>
+        </form>
+        <div id="showCloset"></div>
+        <script src="inputscript.js"></script>
+
+    </body>
+</html>
