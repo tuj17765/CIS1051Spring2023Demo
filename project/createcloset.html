@@ -12,11 +12,110 @@
         <form id="form" class="newForm">
             <input type="file" id="image_input" accept="image/png, image/jpg, image/heif, image/heic, image/heif">
             <div id="descriptors">
-                <input type="text" id="addType" placeholder="Type">
-                <input type="text" id="addColor" placeholder="Color">
-                <input type="text" id="addStyle" placeholder="Style">
-                <input type="text" id="addSeason" placeholder="Season">
-                <input type="text" id="addFit" placeholder="Fit">
+                <label for="addType">Type:</label>
+                <select name="addType" id="addType">
+                    <optgroup label="Top">
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="longsleeve">Long Sleeve Shirt</option>
+                        <option value="crewneck">Crewneck</option>
+                        <option value="buttondown">Button-Down</option>
+                        <option value="cropped">Cropped</option>
+                        <option value="tanktop">Tank-Top</option>
+                        <option value="turtleneck">Turtleneck</option>
+                        <option value="blouse">Blouse</option>
+                    </optgroup>
+                    <optgroup label="Dresses">
+                        <option value="maxi">Maxi</option>
+                        <option value="midi">Midi</option>
+                        <option value="midlength">Mid-Length</option>
+                        <option value="mini">Mini</option>
+                    </optgroup>
+                    <optgroup label="Bottom">
+                        <option value="jeans">Jeans</option>
+                        <option value="cargo">Cargo Pants</option>
+                        <option value="sweats">Sweatpants</option>
+                        <option value="leggings">Leggings</option>
+                        <option value="skirts">Skirts</option>
+                        <option value="slacks">Slacks</option>
+                        <option value="pants">Pants</option>
+                        <option value="other">Other/option>
+                    </optgroup>
+                    <optgroup label="Shoes">
+                        <option value="sneakers">Sneakers</option>
+                        <option value="sandals">Sandals</option>
+                        <option value="boots">Boots</option>
+                        <option value="heels">Heels</option>
+                        <option value="dressshoes">Dress Shoes</option>
+                    </optgroup>
+                    <optgroup label="Outerwear">
+                        <option value="jacket">Jacket</option>
+                        <option value="cardigan">Cardigan</option>
+                        <option value="blazer">Blazer</option>
+                        <option value="hoodie">Hoodie</option>
+                    </optgroup>
+                    <optgroup label="Accessories">
+                        <option value="hats">Hats</option>
+                        <option value="glasses">Glasses</option>
+                        <option value="scarves">Scarves</option>
+                        <option value="jewelry">Jewelry</option>
+                        <option value="bags">Bags</option>
+                        <option value="belts">Belts</option>
+                    </optgroup>
+                </select>
+                <label for="addColor">Color:</label>
+                <select name="addColor" id="addColor">
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="brown">Brown</option>
+                    <option value="beige">Beige</option>
+                    <option value="Red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="teal">Teal</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="multicolor">Multi-Color</option>  
+                </select>
+                <label for="addStyle">Style:</label>
+                <select name="addStyle" id="addStyle">
+                    <option value="alternative">Alternative</option>
+                    <option value="athleisure">Athleisure</option>
+                    <option value="bohemian">Bohemian</option>
+                    <option value="businesscasual">Business Casual</option>
+                    <option value="businessprofessional">Business Professional</option>
+                    <option value="chic">Chic</option>
+                    <option value="ethnic">Ethnic</option>
+                    <option value="feminine">Feminine</option>
+                    <option value="formal">Formal</option>
+                    <option value="gothic">Gothic</option>
+                    <option value="grunge">Grunge</option>
+                    <option value="masculine">Masculine</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="preppy">Preppy</option>
+                    <option value="semiformal">Semi-Formal</option>
+                    <option value="streetwear">Streetwear</option> 
+                    <option value="trendy">Trendy</option> 
+                    <option value="vintage">Vintage</option> 
+                    <option value="other">Other</option> 
+                </select>
+                <label for="addSeason">Season:</label>
+                <select name="addSeason" id="addSeson">
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                </select>
+                <label for="addFit">Fit:</label>
+                <select name="addFit" id="addFit">
+                    <option value="loose">Loose</option>
+                    <option value="regular">Regular</option>
+                    <option value="tight">Tight</option>
+                </select>
             </div>
             <button type = "button" id="btn">Add Item</button>
         </form>
