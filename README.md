@@ -1,6 +1,6 @@
 # CloSets: Wardrobe Organizer and Outfit Generator
 
-#### Video URL:
+### Video URL:
 
 #### Group Members:
 
