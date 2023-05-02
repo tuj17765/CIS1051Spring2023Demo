@@ -10,13 +10,11 @@ Taznuba Hossain and Nitya Enjamuri
 
 ### Challenges Faced
 
-Creating the login/signup feature for our website was definitely one of the biggest challenges we faced. We wanted to create a user-friendly interface that could take in data, but we had a difficult time figuring out how to store all the data for later use. We tried various methods, such as ... but ultimately, we were able use ... to handle the process. 
+Creating the login/signup feature for our website was definitely one of the biggest challenges we faced. We especially had difficultly figuring out how to store all the data for later use, where we could allow users to create accounts, log in, store their clothing items, and then logout. It was a learning curve, and we spent extra time researching and testing different approaches to make it work seamlessly. We tried various methods, such as ... but ultimately, we were able use ... to handle the process. 
 
-### What we Learned
+### What we Learned/Enjoyed
 
-This project was an excellent opportunity to expand our knowledge and learn more about different programming languages. We found that working with new languages forced us to think about programming in new ways and learn new syntax. We were able to gain a better understanding of what it takes to build a simple website, and that was very rewarding to see. 
-
-Despite the challenges we faced, we were able to learn a lot more about the login/signup feature that used a database. ....
+This project was an excellent opportunity to expand our knowledge and learn more about different programming languages. We started with HTML, which was fairly simple to understand. However, as we further developed the website to add interactivity, we had to learn more about JavaScript and Flask, which was a bit more challenging. We were also able to learn more about CSS to style and website and make it more appealing by customizing a template to speed up the process. We found that working with these new languages allowed us to think about programming in new ways and learn new syntax. We were able to gain a better understanding of what it takes to build a simple website, and that was very rewarding to see. One of the best parts of this project was being able to see our ideas come to life on the website. 
 
 ## Citations
 
