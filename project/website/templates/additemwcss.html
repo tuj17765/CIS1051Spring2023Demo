@@ -1,0 +1,203 @@
+
+  {% extends "base.html" %}
+
+  {% block title %}Closet{% endblock %}
+  
+  {% block content %}
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo"><b>Create a New Item</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+  </div>
+
+    <div class="b">
+      <ul class="w3-ul w3-light-grey w3-center">
+      <form id="form" class="newForm" method='POST' action="{{url_for('views.addItem')}}">
+        <li class="w3-black w3-xlarge w3-padding-32">
+            <div class="w3-row-padding">
+              <div class="w3-half">
+                 <input type="file" id="image_input" accept="image/png, image/jpg, image/heif, image/heic, image/heif">
+              </div>
+            </div>
+        </li>
+            <div id="descriptors">
+                <div class="c">
+                  <li class="w3-padding-15">
+                  <label for="addType">Type:</label>
+                  <select name="addType" id="addType">
+                        <option value="select">Select</option>
+                    <optgroup label="Top">
+                        <option value="tshirt">T-Shirt</option>
+                        <option value="longsleeve">Long Sleeve Shirt</option>
+                        <option value="crewneck">Crewneck</option>
+                        <option value="buttondown">Button-Down</option>
+                        <option value="cropped">Cropped</option>
+                        <option value="tanktop">Tank-Top</option>
+                        <option value="turtleneck">Turtleneck</option>
+                        <option value="blouse">Blouse</option>
+                    </optgroup>
+                    <optgroup label="Dresses">
+                        <option value="maxi">Maxi</option>
+                        <option value="midi">Midi</option>
+                        <option value="midlength">Mid-Length</option>
+                        <option value="mini">Mini</option>
+                    </optgroup>
+                    <optgroup label="Bottom">
+                        <option value="jeans">Jeans</option>
+                        <option value="cargo">Cargo Pants</option>
+                        <option value="sweats">Sweatpants</option>
+                        <option value="leggings">Leggings</option>
+                        <option value="skirts">Skirts</option>
+                        <option value="slacks">Slacks</option>
+                        <option value="pants">Pants</option>
+                        <option value="other">Other</option>
+                    </optgroup>
+                    <optgroup label="Shoes">
+                        <option value="sneakers">Sneakers</option>
+                        <option value="sandals">Sandals</option>
+                        <option value="boots">Boots</option>
+                        <option value="heels">Heels</option>
+                        <option value="dressshoes">Dress Shoes</option>
+                    </optgroup>
+                    <optgroup label="Outerwear">
+                        <option value="jacket">Jacket</option>
+                        <option value="cardigan">Cardigan</option>
+                        <option value="blazer">Blazer</option>
+                        <option value="hoodie">Hoodie</option>
+                    </optgroup>
+                    <optgroup label="Accessories">
+                        <option value="hats">Hats</option>
+                        <option value="glasses">Glasses</option>
+                        <option value="scarves">Scarves</option>
+                        <option value="jewelry">Jewelry</option>
+                        <option value="bags">Bags</option>
+                        <option value="belts">Belts</option>
+                    </optgroup>
+                  </select>
+                  
+                  <li class="w3-padding-15">
+                  <label for="addColor">Color:</label>
+                  <select name="addColor" id="addColor">
+                    <option value="select">Select</option>
+                    <option value="black">Black</option>
+                    <option value="white">White</option>
+                    <option value="gray">Gray</option>
+                    <option value="brown">Brown</option>
+                    <option value="beige">Beige</option>
+                    <option value="Red">Red</option>
+                    <option value="orange">Orange</option>
+                    <option value="yellow">Yellow</option>
+                    <option value="green">Green</option>
+                    <option value="teal">Teal</option>
+                    <option value="blue">Blue</option>
+                    <option value="purple">Purple</option>
+                    <option value="pink">Pink</option>
+                    <option value="gold">Gold</option>
+                    <option value="silver">Silver</option>
+                    <option value="multicolor">Multi-Color</option>  
+                  </select>
+                  <li class="w3-padding-15">
+                  <label for="addStyle">Style:</label>
+                  <select name="addStyle" id="addStyle">
+                    <option value="select">Select</option>
+                    <option value="alternative">Alternative</option>
+                    <option value="athleisure">Athleisure</option>
+                    <option value="bohemian">Bohemian</option>
+                    <option value="businesscasual">Business Casual</option>
+                    <option value="businessprofessional">Business Professional</option>
+                    <option value="chic">Chic</option>
+                    <option value="ethnic">Ethnic</option>
+                    <option value="feminine">Feminine</option>
+                    <option value="formal">Formal</option>
+                    <option value="gothic">Gothic</option>
+                    <option value="grunge">Grunge</option>
+                    <option value="masculine">Masculine</option>
+                    <option value="minimalist">Minimalist</option>
+                    <option value="preppy">Preppy</option>
+                    <option value="semiformal">Semi-Formal</option>
+                    <option value="streetwear">Streetwear</option> 
+                    <option value="trendy">Trendy</option> 
+                    <option value="vintage">Vintage</option> 
+                    <option value="other">Other</option> 
+                  </select>
+                  <li class="w3-padding-15">
+                  <label for="addSeason">Season:</label>
+                  <select name="addSeason" id="addSeason">
+                    <option value="select">Select</option>
+                    <option value="winter">Winter</option>
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="autumn">Autumn</option>
+                    <option value="any">Autumn</option>
+                  </select>
+                  <li class="w3-padding-15">
+                  <label for="addFit">Fit:</label>
+                  <select name="addFit" id="addFit">
+                    <option value="select">Select</option>
+                    <option value="loose">Loose</option>
+                    <option value="regular">Regular</option>
+                    <option value="tight">Tight</option>
+                  </select>
+                  <li class="w3-padding-15">
+                </div>
+        <button type="submit" id="btn">Add Item</button>
+      </form>
+      <div id="showCloset"></div>
+      <script src="inputscript.js"></script>
+        <li class="w3-light-grey w3-padding-15"></li>
+      </ul>
+    </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <script>
+    // Modal Image Gallery
+    function onClick(element) {
+      document.getElementById("img01").src = element.src;
+      document.getElementById("modal01").style.display = "block";
+      var captionText = document.getElementById("caption");
+      captionText.innerHTML = element.alt;
+    }
+  </script>
+{% endblock %}
+<!-- End page content -->
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+
+</script>
+
+</body>
+</html>
